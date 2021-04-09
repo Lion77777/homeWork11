@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking mouse movement</title>
+    <style>
+        .point {
+            width: 2px;
+            height: 2px;
+            position: absolute;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // When we move mouse, it draws in the document
+        document.addEventListener('mousemove', (e) => {
+            let point = document.createElement('div');
+            
+            point.classList.add('point');
+            point.style.left = e.pageX + 'px';
+            point.style.top = e.pageY + 'px';
+
+            document.body.append(point);
+        });
+    </script>
+</body>
+</html>
