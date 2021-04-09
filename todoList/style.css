@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', serif;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #8ED3B2;
+}
+
+#submit {
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid #8ED3B2;
+    background: #F5F5F5;
+    color: #97DAD0;
+    outline: none;
+}
+
+.todo-list {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.adjust {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clear {
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #8ED3B2;
+    background: #F5F5F5;
+    color: #97DAD0;
+    outline: none;
+}
+
+.fa-edit {
+    color: #3DC5EA;
+    cursor: pointer;
+    margin-left: 15px
+}
+
+.fa-check-circle {
+    color: #8ED3B2;
+    cursor: pointer;
+}
+
+.fa-times-circle {
+    color: #D84C5C;
+    cursor: pointer;
+    margin-left: 15px
+}
+
+.tasks {
+    margin: 100px 0 0 80px;
+    width: 400px;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
